@@ -5,14 +5,17 @@ public class main {
     public static void main(String[] args) {
 
 
-        int[] array = {2, 4, 7, 1, 17, 3, 5, 12, 11, 9, 8};
-
-        optimisedBubbleSorting(array);
-
+        int[] array = {4,2,7,1,3};
 
         System.out.println(Arrays.toString(array));
 
-//        System.out.println(Arrays.toString(array));
+//
+        optimisedBubbleSorting(array);
+
+
+
+
+        System.out.println(Arrays.toString(array));
 //
 //
 //        boolean isSorted = false;
@@ -55,8 +58,8 @@ public class main {
 //
 //
 //        System.out.println(Arrays.toString(array) + " loop ran " + counter + " times");
-//
-//        // O(N) - linear time
+
+        // O(N) - linear time
 
 
     }
@@ -66,6 +69,8 @@ public class main {
 
 
     public static int [] optimisedBubbleSorting(int [] unsortedArray) {
+
+
 
 
 
@@ -105,6 +110,7 @@ public class main {
             }
 
             unsorted_until_index--;
+
 
 
 
