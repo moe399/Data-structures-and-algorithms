@@ -18,9 +18,6 @@ public class main {
         String[] spliited = string.split("");
 
 
-
-
-
         for (int i = 0; i < spliited.length; i++) {
 
             int counter = 0;
@@ -46,7 +43,7 @@ public class main {
         }
 
 
-        return returnArray ;
+        return returnArray;
 
 
     }
@@ -63,8 +60,6 @@ public class main {
 
         // split string into array
         String[] spliited = string.split("");
-
-
 
 
         HashMap<String, Integer> hash = new HashMap<>();
@@ -90,12 +85,10 @@ public class main {
         }
 
 
-
-        for(int i = 0; i < spliited.length; i++){
-
+        for (int i = 0; i < spliited.length; i++) {
 
 
-            if(hash.get(spliited[i]) == 1){
+            if (hash.get(spliited[i]) == 1) {
 
                 returnArray[0] = spliited[i];
                 break;
@@ -106,17 +99,12 @@ public class main {
         }
 
 
-
-
-
         return returnArray;
 
     }
 
 
     public static void main(String[] args) {
-
-
 
 
         System.out.println(Arrays.toString(firstNonDuplicateValueHash("minimum")));
