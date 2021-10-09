@@ -18,12 +18,15 @@ public class main {
         String[] spliited = string.split("");
 
 
+
+
+
         for (int i = 0; i < spliited.length; i++) {
 
             int counter = 0;
 
 
-            for (int j = i + 1; j < spliited.length; j++) {
+            for (int j = 0; j < spliited.length; j++) {
 
 
                 if (spliited[i].equals(spliited[j])) {
@@ -33,7 +36,7 @@ public class main {
 
             }
 
-            if (counter == 0) {
+            if (counter == 1) {
 
                 returnArray[0] = spliited[i];
                 break;
@@ -43,7 +46,7 @@ public class main {
         }
 
 
-        return returnArray;
+        return returnArray ;
 
 
     }
@@ -86,7 +89,6 @@ public class main {
 
         }
 
-        System.out.println(hash);
 
 
         for(int i = 0; i < spliited.length; i++){
@@ -96,14 +98,15 @@ public class main {
             if(hash.get(spliited[i]) == 1){
 
                 returnArray[0] = spliited[i];
+                break;
 
             }
 
-            
+
         }
 
 
-        System.out.println(hash);
+
 
 
         return returnArray;
@@ -114,10 +117,11 @@ public class main {
     public static void main(String[] args) {
 
 
-//        System.out.println(Arrays.toString(firstNonDuplicateValuequad("ovvo")));
 
-        System.out.println(Arrays.toString(firstNonDuplicateValueHash("minnimum")));
 
+        System.out.println(Arrays.toString(firstNonDuplicateValueHash("minimum")));
+
+        System.out.println(Arrays.toString(firstNonDuplicateValuequad("minimum")));
 
     }
 }
