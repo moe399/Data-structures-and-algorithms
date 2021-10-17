@@ -110,7 +110,6 @@ public class stack {
 
 
 
-            System.out.println(this.array[top]);
             return this.array[top];
 
 
