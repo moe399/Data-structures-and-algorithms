@@ -4,6 +4,10 @@ import java.util.Stack;
 public class main {
 
 
+
+
+
+
     public static void main(String[] args) {
 
 
@@ -19,5 +23,11 @@ public class main {
         customStack.push(7);
         System.out.println(customStack.pop());
         System.out.println(customStack.peek());
+
+
+
+
+
+
     }
 }
