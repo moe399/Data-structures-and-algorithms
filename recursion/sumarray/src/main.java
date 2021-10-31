@@ -34,7 +34,7 @@ public class main {
     public static void main(String[] args) {
 
 
-        int [] array = {4,2,3};
+        int [] array = {4,2,3,6,3};
 
 
 

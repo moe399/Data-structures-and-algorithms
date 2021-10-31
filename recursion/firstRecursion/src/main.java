@@ -1,22 +1,20 @@
 public class main {
 
 
-    public static int factorial(int number){
+    public static int factorial(int i, int total) {
 
 
-        if(number == 0){
+        if (i == 0) {
 
-            return 1 ;
+            return 1;
+        } else {
+
+
+            total = i * factorial(i - 1, total);
+
+            return total;
+
         }
-
-        else{
-
-        }
-
-
-
-
-
 
 
     }
@@ -28,7 +26,7 @@ public class main {
 
 
 
-        System.out.println(factorial(5));
+        System.out.println(factorial(5 ,0));
 
 
 
